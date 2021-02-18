@@ -18,3 +18,8 @@ class Homepage extends StatelessWidget {
     );
   }
 }
+
+//WIDGETS EXPLORED - Scaffold
+//appBar : head of the page
+//drawer: side drawer
+
