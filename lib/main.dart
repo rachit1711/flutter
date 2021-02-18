@@ -1,5 +1,6 @@
+import 'package:codepur_video2/pages/loginpage.dart';
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'pages/homepage.dart';
 void main()
 {
   runApp(new MyApp());
@@ -20,7 +21,26 @@ class MyApp extends StatelessWidget {
     const pi1 =3.14; //here data cannot be modified
     //is used
     return MaterialApp(
-      home:Homepage()
+
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        primarySwatch: Colors.purple
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      initialRoute: "/home",
+      routes: {
+        //1st route (default)
+        "/":(context)=>LoginPage(),
+        //2nd route
+        "/home":(context)=>Homepage(),
+        //3rd route
+        "/login":(context)=>LoginPage()
+      },
     );
   }
 }
+//newly explored on day 3
+//theme , themedata , brightness -light dark system
+//ROUTES and  initialroutes
