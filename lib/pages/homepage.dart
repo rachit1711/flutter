@@ -24,7 +24,4 @@ class HomePage extends StatelessWidget {
   }
 }
 
-//WIDGETS EXPLORED - Scaffold
-//appBar : head of the page
-//drawer: side drawer
 
