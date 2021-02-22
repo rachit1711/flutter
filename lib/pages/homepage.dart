@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/widgets/drawer.dart';
 
+
+//day 11 we learned about constraints , context(stateless element,location) and 3 trees
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Rachit Narang";
